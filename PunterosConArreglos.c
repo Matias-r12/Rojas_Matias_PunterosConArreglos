@@ -6,11 +6,9 @@ int main(int argc, char const *argv[])
     ptr=&vec[0];
     //printf("\n%p",ptr);
     for (int i = 0; i < 5; i++)
-    {
-        printf("%d ",vec[i]);
-
-        printf("\n%d ",*(ptr+i));
+     {
+        printf("vector[%d] %d ",i,vec[i]);
+        printf("\n%d",*(ptr++));
     }
-    
     return 0;
 }
